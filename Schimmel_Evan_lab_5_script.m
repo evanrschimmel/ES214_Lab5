@@ -24,7 +24,7 @@ tol=1e-6;
 sim('Schimmel_Evan_lab_5_model')
 
 plot(t_WM,thetadotA_WM,t_WM,thetadotD_WM,t,theta_dot_A,'--',t,theta_dot_D,'--');
-axis([0 0.414 -inf inf]);
+axis([0 tf -inf inf]);
 xlabel('Time [s]');
 ylabel('Angular velocity [rad/s]');
 legend('Arm model given data','Disk model given data','Arm model simulation','Disk model simulation');
